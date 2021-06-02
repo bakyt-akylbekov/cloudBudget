@@ -395,6 +395,14 @@ input::placeholder {
   color: #101010;
   margin-bottom: 33px;
 }
+.footer__description {
+  font-size: 12px;
+  line-height: 150%;
+}
+.footer__menu {
+  font-size: 12px;
+  line-height: 160%;
+}
 .footer__link {
   list-style-type: none;
   text-transform: capitalize;
@@ -409,6 +417,8 @@ input::placeholder {
   margin: 11px 0 21px 0;
 }
 .footer__a {
+  font-size: 12px;
+  line-height: 14px;
   text-decoration: none;
   color: #101010;
 }

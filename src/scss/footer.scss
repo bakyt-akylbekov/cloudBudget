@@ -6,6 +6,12 @@
     color: #101010;
     margin-bottom: 33px;
   }
+  &__description{
+    @include font(12px, 150%);
+  }
+  &__menu{
+    @include font(12px, 160%);
+  }
   &__link{
     list-style-type: none;
     text-transform: capitalize;
@@ -20,6 +26,7 @@
     margin: 11px 0 21px 0;
   }
   &__a{
+    @include font(12px, 14px);
     text-decoration: none;
     color: #101010;
   }
