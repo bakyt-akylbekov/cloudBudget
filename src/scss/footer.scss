@@ -1,0 +1,39 @@
+.footer{
+  padding: 85px 0 86px;
+  background: #FAFAFA;
+  &__title{
+    @include font(18px, 22px);
+    color: #101010;
+    margin-bottom: 33px;
+  }
+  &__link{
+    list-style-type: none;
+    text-transform: capitalize;
+    margin-bottom: 7px;
+  }
+  &__icons{
+    display: flex;
+    column-gap: 17px;
+    list-style-type: none;
+  }
+  &__tel{
+    margin: 11px 0 21px 0;
+  }
+  &__a{
+    text-decoration: none;
+    color: #101010;
+  }
+  &__copyright{
+    margin-top: 86px;
+    margin-left: 15px;
+  }
+  &__icon{
+    color: #101010;
+    transition: .6s;
+    &:hover{
+      font-size: 22px;
+      transition: .6s;
+      color: #ED4C5C;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.contact {
+  padding: 117px 0 78px;
+
+  &__title {
+    @include baseFont;
+    @include font(36px, 43px);
+  }
+
+  &__description {
+    @include baseFont;
+    @include font(14px, 140%);
+    margin-top: 55px;
+  }
+
+  &__form {
+    width: 540px;
+    &-block{
+      height: 60px;
+      margin-bottom: 24px;
+    }
+    &-input-text{
+      height: 100%;
+      width: 255px;
+      border-radius: 6px;
+      padding: 0 31px;
+    }
+    &-first-name{
+      margin-right: 25px;
+    }
+    &-input-tel{
+      height: 100%;
+      width: 100%;
+      border-radius: 6px;
+      padding: 0 31px;
+    }
+    &-select{
+      @include font(16px, 19px);
+      height: 100%;
+      width: 100%;
+      border-radius: 6px;
+      padding: 0 31px;
+      color: rgba(19, 39, 67, 0.5);
+
+    }
+    &-button{
+      @include font(14px, 17px);
+      padding: 17px 34px;
+      background-color: #ED4C5C;
+      border: none;
+      border-radius: 6px;
+      color: $primary-color;
+      text-transform: uppercase;
+      transition: .6s;
+      cursor: pointer;
+      &:hover{
+        background-color: #ff5364;
+        transition: .6s;
+      }
+
+    }
+
+
+  }
+
+}
+input::placeholder{
+  @include font(16px, 19px);
+  color: rgba(19, 39, 67, 0.5);
+}

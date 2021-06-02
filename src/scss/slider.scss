@@ -1,0 +1,31 @@
+.slider{
+  padding: 94px 0 95px;
+  background-color: #ED4C5C;
+  &__item{
+    @include baseFont;
+    color: $primary-color;
+  }
+  &__title{
+    @include font(36px, 43px);
+  }
+  &__description{
+    @include font(14px, 140%);
+    margin: 42px 0;
+  }
+  &__icons{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    column-gap: 25px;
+
+  }
+  &__icon{
+    font-size: 35px;
+    cursor: pointer;
+    transition: .6s;
+    &:hover{
+      font-size: 38px;
+      transition: .6s;
+    }
+  }
+}

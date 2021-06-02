@@ -1,0 +1,44 @@
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/hero/Bg.png") top left/100% 100% no-repeat;
+
+  &__content {
+    @include baseFont;
+    text-align: center;
+    color: $primary-color;
+  }
+
+  &__title {
+    @include font(72px, 86px);
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    @include font(24px, 150%);
+    margin: 25px 0;
+  }
+
+  &__button {
+    @include font(14px, 17px);
+    padding: 17px 52px;
+    border: 1px solid $primary-color;
+    border-radius: 6px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: $primary-color;
+    transition: .6s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $primary-color;
+      color: #ED4C5C;
+      transition: .6s;
+    }
+  }
+}
